@@ -30,7 +30,7 @@ print(Datos_csv.head())
 
 #cargar archivo excel
 """
-datos_excel = pd.read_excel("ventas_limpio.xlsx",sheet_name="copia") #leer otra hoja de excel
+datos_excel = pd.read_excel("ventas_limpio.xlsx",sheet_name="nombre hoja") #leer otra hoja de excel
 print(datos_excel.head())
 """
 """
@@ -43,9 +43,14 @@ print(datos_excel.columns) #imprime el index, las 1eras
 #mostrar columnas en especifico con sus datos
 print(datos_excel[['categoria','producto','precio']])
 """
-"""
-datos_excel = pd.read_excel("ventas_limpio.xlsx",sheet_name="none") #leer todas las hojas excel
-"""
+
+#datos_excel = pd.read_excel("ventas_limpio.xlsx",sheet_name="none") #leer todas las hojas excel
+
 datos_excel = pd.read_excel("ventas_limpio.xlsx") 
 print(datos_excel.head())
 print(datos_excel[datos_excel['precio']==100000])
+
+#promedio del precio
+promedio=datos_excel["precio"].mean()
+print(promedio)
+print(round())
