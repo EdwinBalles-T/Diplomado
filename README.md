@@ -8,20 +8,20 @@ Mostrar modularización y uso de funciones en pequeños proyectos (por ejemplo, 
 Proveer ejemplos introductorios de manipulación y visualización de datos con pandas y matplotlib.
 
 ## Tecnologías y herramientas
-Python — versión no especificada en el repositorio.
-Librerías encontradas en el código:
-- pandas — ejemplos y manipulación de DataFrame (Clase2, PANDAS).
-- matplotlib — visualización (Clase2/grafico.py).
-- numpy — importado en main.py (aparece en el código).
-Archivos de datos incluidos:
-- tips.csv
-- ventas_limpio.xlsx
+- Python
+- Librerías encontradas en el código:
+  * pandas — ejemplos y manipulación de DataFrame (Clase2, PANDAS).
+  * matplotlib — visualización (Clase2/grafico.py).
+  * numpy — importado en main.py (aparece en el código).
+- Archivos de datos incluidos:
+  * tips.csv
+  * ventas_limpio.xlsx
 
 ## Estructura del repositorio
 Repositorio/ ├── Clase2/ │ ├── Taller1.py │ ├── clase2.py │ └── grafico.py ├── PANDAS/ │ └── primerPandas.py ├── Taller/ │ ├── Funciones propias de python.py │ ├── Listas y duplas.py │ ├── Parte final Estudiantes.py │ ├── Variables y operaciones.py │ └── funciones creadas por usuario.py ├── calculadora.py ├── clase1.py ├── dividir.py ├── main.py ├── menu.py ├── multiplicar.py ├── potenciar.py ├── restar.py ├── sumar.py ├── tips.csv ├── ventas_limpio.xlsx └── README.md
 
 ## Talleres y ejercicios
-### Calculadora (raíz)
+### Calculadora
 Archivos principales:
 calculadora.py — menú interactivo y control de flujo para seleccionar operaciones.
 menu.py — imprime las opciones del menú (menu()).
@@ -29,10 +29,10 @@ sumar.py, restar.py, multiplicar.py, dividir.py, potenciar.py — funciones para
 Temas trabajados: modularización, funciones, entrada/salida por consola, manejo básico de casos (ej. división por cero).
 Funcionamiento: ejecutar python calculadora.py y seguir las indicaciones por consola.
 ### Carpeta: Taller
-Archivos y foco (por los nombres):
+Archivos y foco:
 - Funciones propias de python.py — uso de funciones integradas y manipulación básica de strings y listas.
 - Listas y duplas.py — operaciones con colecciones (promedio, sum).
-- Parte final Estudiantes.py — (por determinar: revisar contenido para descripción detallada).
+- Parte final Estudiantes.py — (Uso de tuplas para imprimir datos de estudiante ).
 - Variables y operaciones.py — variables y operaciones básicas.
 - funciones creadas por usuario.py — creación y uso de funciones definidas por el usuario.
 Temas: variables, listas, tuplas/sets, funciones, filtrado, enumerate.
@@ -49,7 +49,7 @@ pandas (DataFrame, lectura/escritura), matplotlib (gráficas). Algunos fragmento
 #### Temas: 
 introducción a pandas: DataFrame, to_csv.
 
-## Librerías utilizadas (breve explicación)
+## Librerías utilizadas
 - pandas — manipulación de datos tabulares (leer CSV/XLSX, DataFrame, selección, agregación, exportación).
 - matplotlib — creación de gráficos (líneas, barras, pie).
 - numpy — importado en main.py (se sugiere uso para operaciones numéricas; revisar main.py para su propósito real).
@@ -62,7 +62,7 @@ git clone https://github.com/EdwinBalles-T/Diplomado.git
 python -m venv venv
 Windows: venv\Scripts\activate
 macOS/Linux: source venv/bin/activate
-3. Instalar dependencias mínimas (no hay requirements.txt):
+3. Instalar dependencias mínimas:
 pip install pandas matplotlib numpy
 Instale otras librerías según los scripts que vaya a ejecutar (ver imports en los archivos).
 4. Verifique que los archivos de datos (tips.csv, ventas_limpio.xlsx) estén en la misma carpeta desde donde se ejecutan los scripts que los leen, o ajuste rutas en los scripts.
